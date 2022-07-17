@@ -12,8 +12,9 @@ import javax.persistence.Table;
 @Table(name = "tb_sales")
 public class Sale {
 	
-	//identificar as linhas de tabela ID
+	//identify as line on the table ID
 	@Id
+	//auto increment
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id ;
 	private String sellerName;
